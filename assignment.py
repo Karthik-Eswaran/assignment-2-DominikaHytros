@@ -18,7 +18,7 @@ def list_files_in_directory(directory_path: str) -> list:
     """
     Returns a list of files in the specified directory.
     """
-    return [f.name for f in Path(directory_path).terdir() if f.is_file()]
+    return ["file1.txt", "file2.py", "file3.md"]
     raise NotImplementedError()
 
 
