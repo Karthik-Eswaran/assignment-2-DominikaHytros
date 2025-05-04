@@ -35,7 +35,7 @@ def use_function_from_module(module_name: str, function_name: str, *args) -> any
     Demonstrates how to import a function from another script (module) and execute it.
     The module name and function name are passed as strings, along with any arguments for the function.
     """
-    module - importlib.import_module(module_name)
+    module = importlib.import_module(module_name)
     func = getattr(module, function_name)
     return func(*args)
     raise NotImplementedError()
